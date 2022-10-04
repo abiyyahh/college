@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .nama{
+        font-size: 30px;
+        font-family: monospace;
+        color: white;
+    }
+    .snow-bros li {
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  .t {
+    background-image: linear-gradient(to left, #3d060a 10px, #00a2e2 10px), linear-gradient(to top, #3d060a 10px, #00a323 10px, #00a323 30px, #09c5d8 30px, #09c5d8 40px, #00a2e2 40px), linear-gradient(to top, #3d060a, #3d060a), linear-gradient(to top, #3d060a, #3d060a);
+    background-size: 80px 10px, 30px 70px, 80px 10px, 10px 70px;
+    background-position: 0px 0px, 20px 10px, 0px 10px, 50px 10px;
+  }
+  .h {
+    background-image: linear-gradient(to top, #3d060a 10px, #00a323 10px, #00a323 30px, #09c5d8 30px, #09c5d8 40px, #00a2e2 40px), linear-gradient(to top, #3d060a 10px, #00a2e2 10px), linear-gradient(to top, #3d060a, #3d060a), linear-gradient(to top, #3d060a 10px, #00a323 10px, #00a323 30px, #09c5d8 30px, #09c5d8 40px, #00a2e2 40px), linear-gradient(to top, #3d060a, #3d060a);
+    background-size: 30px 80px, 20px 20px, 10px 80px, 20px 80px, 10px 80px;
+    background-position: 0px 0px, 30px 30px, 30px 0px, 50px 0px, 70px 0px;
+  }
+  .x {
+    background-image: linear-gradient(to top, #00a2e2, #00a2e2), linear-gradient(to left, #3d060a 10px, #00a2e2 10px), linear-gradient(to right, #3d060a 10px, #00a2e2 10px), linear-gradient(to left, #3d060a 10px, #00a2e2 10px), linear-gradient(to right, #3d060a 10px, #00a2e2 10px), linear-gradient(to left, #3d060a 10px, #00a2e2 10px), linear-gradient(to top, #00a2e2, #00a2e2), linear-gradient(to left, #3d060a 10px, #09c5d8 10px), linear-gradient(to top, #09c5d8, #09c5d8), linear-gradient(to left, #3d060a 10px, #00a323 10px), linear-gradient(to right, #3d060a 10px, #00a323 10px), linear-gradient(to left, #3d060a 10px, #00a323 10px), linear-gradient(to right, #3d060a 10px, #00a323 10px), linear-gradient(to top, #3d060a, #3d060a), linear-gradient(to top, #3d060a, #3d060a), linear-gradient(to top, #3d060a, #3d060a);
+    background-size: 20px 10px, 30px 10px, 30px 10px, 30px 10px, 30px 10px, 20px 10px, 30px 10px, 30px 10px, 20px 10px, 30px 10px, 30px 10px, 20px 10px, 20px 10px, 10px 10px, 10px 10px, 20px 10px;
+    background-position: 0px 0px, 50px 0px, 0px 10px, 40px 10px, 10px 20px, 40px 20px, 20px 30px, 10px 40px, 40px 40px, 0px 50px, 40px 50px, 0px 60px, 50px 60px, 0px 70px, 70px 60px, 60px 70px;
+  }
+  h1 {
+    font-size: 5px;
+    font:bold 7.5vw/1.6 'Signika', sans-serif;
+    user-select:none;
+   }
+   
+   h1 span { display:inline-block; animation:float .2s ease-in-out infinite; }
+    @keyframes float {
+     0%,100%{ transform:none; }
+     33%{ transform:translateY(-1px) rotate(-2deg); }
+     66%{ transform:translateY(1px) rotate(2deg); }
+   }
+   body:hover span { animation:bounce .6s; }
+   @keyframes bounce {
+     0%,100%{ transform:translate(0); }
+     25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+     50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+   }
+   
+   span:nth-child(4n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
+   span:nth-child(4n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
+   span:nth-child(4n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
+   span:nth-child(4n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); }
+   
+   h1 span:nth-child(2){ animation-delay:.05s; }
+   h1 span:nth-child(3){ animation-delay:.1s; }
+   h1 span:nth-child(4){ animation-delay:.15s; }
+   h1 span:nth-child(5){ animation-delay:.2s; }
+   h1 span:nth-child(6){ animation-delay:.25s; }
+   h1 span:nth-child(7){ animation-delay:.3s; }
+   h1 span:nth-child(8){ animation-delay:.35s; }
+   h1 span:nth-child(9){ animation-delay:.4s; }
+   h1 span:nth-child(10){ animation-delay:.45s; }
+   h1 span:nth-child(11){ animation-delay:.5s; }
+   h1 span:nth-child(12){ animation-delay:.55s; }
+   h1 span:nth-child(13){ animation-delay:.6s; }
+   h1 span:nth-child(14){ animation-delay:.65s;}
+</style>
+<title>Manga/Manhwa</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        //<link rel="stylesheet" href="styletugastable.css">
+    </head>
+    <body style="background-image: url(https://wallpapercave.com/wp/wp6037510.jpg);">      
+        <h1>
+            <center>
+            <span>RA</span><span>TI</span><span>NG</span><br><span>M</span><span>A</span><span>N</span><span>G</span><span>A</span><span>&</span><span>M</span><span>A</span><span>N</span><span>HW</span><span>A</span>
+            </center>
+        </h1>
+        <p>  </p>
+        <h5 style="color: white; font-family: Lucida console; font-size: 20px;">
+        <center>"di tabel ini ada beberapa manga dan mahwa yang sudah pernah dibaca oleh pembuat tugas ini dan sudah dirating berdasarkan penilaiain pribadi yang hanya dari seseorang penikmaat bacaan bergambar"</center>
+        </h5>
+        <p>  </p>
+            <center><table cellpadding="15"width: "35%">
+            <tr style="font-family: Lucida console; font-size: xx-large; color: whitesmoke; background-color:rgb(202, 106, 226) ;" class="atas">
+                <th>No</th>
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Synopsis</th>
+                <th>Rate</th>
+            </tr>
+            <tbody style="background-color: rgb(255, 185, 246); font-family: monospace; font-size: x-large;">
+            <tr>
+                <td>
+                    <center>1</center>
+                </td>
+                <td>
+                    <img src="https://www.anime-planet.com/images/manga/covers/thumbs/29819.jpg?t=1616340416" alt="Cover Eleceed" width="150" height="210"> 
+                </td>
+                <td>
+                    <center>Eleceed</center>
+                </td>
+                <td>
+                    <center>
+                    ini tentang kaiden yang berubah jadi kucing karna bosen hidup punya kekuatan banyak dan jiwoo dan nemu kaiden di jalan dan dijadiin peliharaan dan akhirnya ketauan kalo kaiden itu the awakened
+                    </center>
+                </td>
+                <td>
+                    <center>9.5/10</center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <center>2</center>
+                </td>
+                <td>
+                    <img src="https://i.pinimg.com/originals/e7/d4/9a/e7d49a134d293a9684d7d3f19876c16d.png" alt="cover solo leveling" width="150" height="210">
+                </td>
+                <td>
+                    <center>Solo Leveling</center>
+                </td>
+                <td>
+                    <center>
+                    ini tentang jinwoo yang kerjannya jadi hunter terus suatu saat dia kejebak di dalam dungeon dan bangkit lagi jadi bisa level up dirinya sendiri
+                    </center>
+                </td>
+                <td>
+                    <center>9/10</center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>3</center>
+                </td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/89/Blue_Period_Volume_1_cover.jpg" alt="cover blue period" width="150" height="210">
+                </td>
+                <td>
+                    <center>Blue period</center>
+                </td>
+                <td>
+                    <center>
+                    ini tentang yaguchi anak pinter yang rajin belajar tapi dia sering ngerasa kosong karena dia gatau passion dia sebenarnya dan akhirnya dia mulai mengenal seni
+                    </center>
+                </td>
+                <td>
+                    <center>8,5/10</center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>4</center>
+                </td>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/3/31/Volume_4.png/revision/latest?cb=20190226191850.jpg" alt="cover Jujutsu Kaisen" width="150" height="210">
+                </td>
+                <td>
+                    <center>Jujutsu Kaisen</center>
+                </td>
+                <td>
+                    <center>
+                    ini tentang Itadori yuuji yang tiba-tiba jadi sorcerer karena dia makan jarinya sukuna udah gitu gacuman 1 tapi banyak
+                    </center>
+                </td>
+                <td>
+                    <center>10/10</center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center>5</center>
+                </td>
+                <td>
+                    <img src="https://static.wikia.nocookie.net/blackclover/images/0/0e/Volume_1.png/revision/latest/scale-to-width-down/760?cb=20150625202733.jpg" alt="cover Black Clover" width="150" height="210">
+                </td>
+                <td>
+                    <center>Black Clover</center>
+                </td>
+                <td>
+                    <center>
+                    ini tentang Asta yang mau jadi kesatria sihir TAPI gapunya sihir beda sama Yuno yang dikasi sihir dari lahir pokoknya ini seru bgt dah mari baca dan tonton animenya
+                    </center>
+                </td>
+                <td>
+                    <center>100/10</center>
+                </td>
+            </tr>
+            </tbody>
+        </table></center>
+    </body>
+    <footer>
+        <center>
+            <ol class="snow-bros">
+                <li class="t"> </li>
+                <li class="h"> </li>
+                <li class="x"> </li>
+            </ol>
+            <p class="nama">Abiyyah 2110512070</p>
+        </center>
+    </footer>
+</html>
